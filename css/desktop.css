@@ -359,8 +359,7 @@ a {
 		position: relative;
 		bottom: -110%;
 	}
-	#showcase.scrolled #button,
-	#showcase:hover #button {
+	#showcase.scrolled #button {
 		bottom: -80%;
 	}
 	#button:hover {
@@ -484,7 +483,7 @@ a {
 		position: relative;
 		bottom: -110%;
 	}
-	#showcase:hover #button,
+
 	#showcase.scrolled #button {
 		bottom: -80%;
 	}
