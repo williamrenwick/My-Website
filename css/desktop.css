@@ -320,6 +320,8 @@ a {
     	transition-duration: 0.1s;
 	}
 	#showcasewrap {
+		width:70%;
+		margin: 0 auto;
 	}
 	.showcase {
 		width: 100%;
@@ -330,14 +332,13 @@ a {
 		display: block;
 		max-width: 100%;
 		height: auto;
-
 		margin: 0 auto;
 	}
 	.showcase:hover{
 		background-color: #5a2bf1;
 	}
 	.showcase:hover #button {
-		bottom: -90vh;
+		bottom: 40px;
 	}
 	#button {
 		border:2px solid #fff;
@@ -362,7 +363,7 @@ a {
 		text-decoration: none;
 		text-transform: uppercase;
 		position: relative;
-		bottom: -9999px;
+		bottom: -90px;
 	}
 	#button:hover {
 		background-color: #fff;
@@ -443,19 +444,23 @@ a {
     	-moz-transition-duration: 0.1s;
     	transition-duration: 0.1s;
 	}
+	#showcasewrap {
+		width:70%;
+		margin: 0 auto;
+	}
+	.showcase img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
 	.showcase {
 		width: 100%;
-		margin-top: 105px;
 		background-color: #f7f7f7;
-		background-image: url(../img/Name.svg);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position:center;
 		overflow: hidden;
 	}
 	.showcase:hover{
 		background-color: #5a2bf1;
-		background-image: url(../img/Namehov.svg);
 	}
 	.showcase:hover #button {
 		bottom: 35px;
@@ -586,19 +591,23 @@ a {
 	.nav-mobile-open {
 		
 	}
+	#showcasewrap {
+		width:70%;
+		margin: 0 auto;
+	}
+	.showcase img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
 	.showcase {
 		width: 100%;
-		margin-top: 75px;
 		background-color: #f7f7f7;
-		background-image: url(../img/Name.svg);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position:center;
 		overflow: hidden;
 	}
 	.showcase:hover{
 		background-color: #5a2bf1;
-		background-image: url(../img/Namehov.svg);
 	}
 	.showcase:hover #button {
 		bottom: 20px;
@@ -725,19 +734,24 @@ a {
 	.nav-mobile-open {
 		
 	}
+	#showcasewrap {
+		width:70%;
+		margin: 0 auto;
+	}
+	.showcase img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
 	.showcase {
 		width: 100%;
-		margin-top: 75px;
 		background-color: #f7f7f7;
-		background-image: url(../img/Name.svg);
-		background-size: 80%;
-		background-repeat: no-repeat;
-		background-position:center;
 		overflow: hidden;
 	}
 	.showcase:hover{
 		background-color: #5a2bf1;
-		background-image: url(../img/Namehov.svg);
+
 	}
 	.showcase:hover #button {
 		bottom: 20px;
@@ -851,19 +865,23 @@ a {
 	.nav-mobile-open {
 		
 	}
+	#showcasewrap {
+		width:70%;
+		margin: 0 auto;
+	}
+	.showcase img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
 	.showcase {
 		width: 100%;
-		margin-top: 75px;
 		background-color: #f7f7f7;
-		background-image: url(../img/Name.svg);
-		background-size: 80%;
-		background-repeat: no-repeat;
-		background-position:center;
 		overflow: hidden;
 	}
 	.showcase:hover{
 		background-color: #5a2bf1;
-		background-image: url(../img/Namehov.svg);
 	}
 	.showcase:hover #button {
 		bottom: 20px;
