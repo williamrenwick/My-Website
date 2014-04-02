@@ -35,9 +35,9 @@
 		<div class="showcase">
 			<div id="showcasewrap">
 				<img src="img/Name.svg"/>
-				<div id="button">
+			</div>
+			<div id="button">
 					<a href="pages/about.html">About Me</a>
-				</div>
 			</div>
 		</div>
 		<div class="projects container">
@@ -162,22 +162,21 @@
 		<script src="js/jquery-scrollTo.js"></script>
 
 		<script>
+		
+		var resizeShowcaseDiv = function() {
+			$(".showcase").height($(window).height());
+		};
+
+		resizeShowcaseDiv();
+		$(window).on("resize", resizeShowcaseDiv);
+	
+
 
 		$("#button").click(function(){
      		window.location=$(this).find("a").attr("href"); 
      		return false;
 		});
 
-		// resize the showcaseDiv to begin with and on viewport resize
-		(function() {
-
-		var resizeTitleDiv = function() {
-			$(".showcase").height($(window).height());
-		};
-
-		resizeTitleDiv();
-		$(window).on("resize", resizeTitleDiv);
-		})
 
 		var $window = $(window); var velocity = 0.4; 
 			function update(){ 

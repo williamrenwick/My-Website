@@ -319,14 +319,16 @@ a {
     	-moz-transition-duration: 0.1s;
     	transition-duration: 0.1s;
 	}
-	#showcasewrap {
-		width:70%;
-		margin: 0 auto;
-	}
 	.showcase {
+		display: table;
 		width: 100%;
 		background-color: #f7f7f7;
 		overflow: hidden;
+	}
+	#showcasewrap {
+		display: table-cell;
+		vertical-align: middle;
+		margin: 0 auto;
 	}
 	.showcase img {
 		display: block;
