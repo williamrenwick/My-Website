@@ -728,27 +728,24 @@ a {
 	.nav-mobile-open {
 
 	}
-	#showcasewrap {
-		width:70%;
-		margin: 0 auto;
-	}
-	.showcase img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
-	.showcase {
+	#showcase {
 		width: 100%;
+		margin-top: 20px;
 		background-color: #f7f7f7;
 		overflow: hidden;
+		background-size: 80%;
+		background-image: url(../img/Name.svg);
+		background-position: center;
+		background-repeat: no-repeat;
 	}
-	.showcase:hover{
+	#showcase.scrolled {
+		background-image: url(../img/Namehov.svg);
 		background-color: #5a2bf1;
-
+		background-repeat: repeat;
+		background-size: 40%;
 	}
-	.showcase:hover #button {
-		bottom: 20px;
+	#showcase.scrolled:hover #button {
+		bottom: -80%;
 	}
 	#button {
 		background-image: url(../img/more.svg);
@@ -756,12 +753,13 @@ a {
 		height: 40px;
 		margin: 60px auto 0;
 		letter-spacing: 1px;
-  		overflow:hidden;
+		background-repeat: no-repeat;
+		overflow:hidden;
   		text-indent:100%;
   		white-space:nowrap;
     	cursor: pointer;
 		position: relative;
-		bottom: -40px;
+		bottom: -110%;
 		-webkit-transition-duration: 0.2s;
     	-moz-transition-duration: 0.2s;
     	transition-duration: 0.2s;
@@ -859,26 +857,24 @@ a {
 	.nav-mobile-open {
 
 	}
-	#showcasewrap {
-		width:70%;
-		margin: 0 auto;
-	}
-	.showcase img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
-	.showcase {
+	#showcase {
 		width: 100%;
+		margin-top: 20px;
 		background-color: #f7f7f7;
 		overflow: hidden;
+		background-size: 80%;
+		background-image: url(../img/Name.svg);
+		background-position: center;
+		background-repeat: no-repeat;
 	}
-	.showcase:hover{
+	#showcase.scrolled {
+		background-image: url(../img/Namehov.svg);
 		background-color: #5a2bf1;
+		background-repeat: repeat;
+		background-size: 40%;
 	}
-	.showcase:hover #button {
-		bottom: 20px;
+	#showcase.scrolled:hover #button {
+		bottom: -80%;
 	}
 	#button {
 		background-image: url(../img/more.svg);
@@ -887,11 +883,12 @@ a {
 		margin: 60px auto 0;
 		letter-spacing: 1px;
 		background-repeat: no-repeat;
+		overflow:hidden;
   		text-indent:100%;
   		white-space:nowrap;
     	cursor: pointer;
 		position: relative;
-		bottom: -40px;
+		bottom: -110%;
 		-webkit-transition-duration: 0.2s;
     	-moz-transition-duration: 0.2s;
     	transition-duration: 0.2s;
