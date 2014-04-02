@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8"/>
+		<title>William Renwick, Designer</title>
+		<link rel='stylesheet' href='css/desktop.css' />
+		<link rel='stylesheet' href='css/reset.css' />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body>
+
+		<div id="header" class="clearfix">
+
+			<div id="logoDiv">
+     			<img src="img/w-icon.svg" class="logoImg">
+    		</div>
+
+
+
+			<nav class="nav" class="clearfix">
+				<ul class="nav-list" class="clearfix">
+					<li class="nav-item" id="about" /><a href="pages/about.html">About</a></li>
+					<li class="nav-item" id="work"><a>Work</a></li>
+					<li class="nav-item"><a href="http://williamrenwickdesign.tumblr.com/">Blog</a></li>
+				</ul>
+			</nav>
+
+			
+		</div>	
+
+		<div class="showcase">
+			<div id="showcasewrap">
+				<img src="img/Name.svg"/>
+				<div id="button">
+					<a href="pages/about.html">About Me</a>
+				</div>
+			</div>
+		</div>
+		<div class="projects container">
+			<div class="titlewrap">
+				<div id="workTitle">
+					Work
+				</div>
+				<div class="titleunderline"></div>
+			</div>
+				<div id="wrap">
+					<div class="section group">
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/challenge.html">
+								<div class="projectImage">
+									<img src="img/8.png"/>
+								</div>
+								<div class="title">
+									Challenger
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/gb.html">
+								<div class="projectImage">
+									<img src="img/9.png"/>
+								</div>
+								<div class="title">
+									Gillian Bolton
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/cms.html">
+								<div class="projectImage">
+									<img src="img/7.png"/>
+								</div>
+								<div class="title">
+									Career Management
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/shot.html">
+								<div class="projectImage">
+									<img src="img/1.png"/>
+								</div>
+								<div class="title">
+									Shot Magazine
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/snap.html">
+								<div class="projectImage">
+									<img src="img/2.png"/>
+								</div>
+								<div class="title">
+									Snap
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/mount.html">
+								<div class="projectImage">
+									<img src="img/3.png"/>
+								</div>
+								<div class="title">
+									Mount Kimbie
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/ca.html">
+								<div class="projectImage">
+									<img src="img/5.png"/>
+								</div>
+								<div class="title">
+									Creative Action
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/prism.html">
+								<div class="projectImage">
+									<img src="img/4.png"/>
+								</div>
+								<div class="title">
+									Prism
+								</div>
+							</a>
+						</div>
+						<div class="col span_1_of_3 span_1_of_2">
+							<a href="projects/mei.html">
+								<div class="projectImage">
+									<img src="img/6.png"/>
+								</div>
+								<div class="title">
+									Mei-Li Rose
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer container">
+				<div class="contact">
+					<div class="info">
+						<p>If you would like to work with me or have any questions feel free to get in touch:</p> <p><a>william.r.renwick@gmail.com</a></p>
+					</div>
+					<div id="linkicons">
+						<ul class="icons">
+							<li class="icon-item" id="facebook" /><a href="http://www.facebook.com/william.renwick"><img src="img/facebook.svg" alt="Facebook" /></a></li>
+							<li class="icon-item" id="linkedin"><a href="http://http://www.linkedin.com/pub/william-renwick/37/6b2/934"><img src="img/linkedin.svg" alt="Linkedin" /></a></li>
+						</ul>
+					</div>
+					<div class="copyright">
+						<p>© 2014 All work copyright of William Renwick.</p> 
+					</div>
+				</div>
+			</div>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery-scrollTo.js"></script>
+
+		<script>
+
+		$("#button").click(function(){
+     		window.location=$(this).find("a").attr("href"); 
+     		return false;
+		});
+
+		// resize the showcaseDiv to begin with and on viewport resize
+		(function() {
+
+		var resizeTitleDiv = function() {
+			$(".showcase").height($(window).height());
+		};
+
+		resizeTitleDiv();
+		$(window).on("resize", resizeTitleDiv);
+		})
+
+		var $window = $(window); var velocity = 0.4; 
+			function update(){ 
+				var pos = $window.scrollTop(); 
+				$('.container').each(function() { 
+					var $element = $(this); 
+					var height = $element.height(); 
+					$(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
+
+		$(document).scroll(function(){
+		     $('#header').toggleClass('scrolled', $(this).scrollTop() > 105);
+		 });
+
+		function getHeaderHeight() {
+			return $("#header").outerHeight();
+		}
+
+		$('#about').click(function(){ 
+			$('body').scrollTo('#me', 600, { offset: -(getHeaderHeight() - 1) });
+		});
+
+		$('#work').click(function(){ 
+			$('body').scrollTo('#workTitle', 600, { offset: -getHeaderHeight() });
+		});
+
+		(function () {
+        
+		    // Create mobile element
+		    var mobile = document.createElement('div');
+		    mobile.className = 'nav-mobile';
+		    document.querySelector('.nav').appendChild(mobile);
+
+		    // hasClass
+		    function hasClass(elem, className) {
+		        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+		    }
+
+		    // toggleClass
+		    function toggleClass(elem, className) {
+		        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+		        if (hasClass(elem, className)) {
+		            while (newClass.indexOf(' ' + className + ' ') >= 0) {
+		                newClass = newClass.replace(' ' + className + ' ', ' ');
+		            }
+		            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+		        } else {
+		            elem.className += ' ' + className;
+		        }
+		    }
+
+		    // Mobile nav function
+		    var mobileNav = document.querySelector('.nav-mobile');
+		    var toggle = document.querySelector('.nav-list');
+		    mobileNav.onclick = function () {
+		        toggleClass(this, 'nav-mobile-open');
+		        toggleClass(toggle, 'nav-active');
+		    };
+		})();
+
+  		
+		</script>
+
+		 
+	</body>
+</html>
