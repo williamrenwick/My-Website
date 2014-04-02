@@ -2,11 +2,11 @@
 .clearfix:after {
     content: " ";
     display: table;
-} 
+}
 .clearfix:after {
     clear: both;
 }
-.clearfix {	
+.clearfix {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 body{
@@ -39,7 +39,7 @@ body{
 	height: 49px;
     left: 50%;
     margin-left: -35px;
-    position: relative; 
+    position: relative;
 }
 #logoDiv{
 	float:left;
@@ -209,8 +209,8 @@ a {
 	padding: 0px;
 	margin: 0 0 80px 0;
 }
-.col:last-child { 
-	right: 0; 
+.col:last-child {
+	right: 0;
 }
 .col img {
 	width: 100%;
@@ -359,7 +359,8 @@ a {
 		position: relative;
 		bottom: -110%;
 	}
-	#showcase.scrolled:hover #button {
+	#showcase.scrolled #button,
+	#showcase:hover #button {
 		bottom: -80%;
 	}
 	#button:hover {
@@ -483,7 +484,8 @@ a {
 		position: relative;
 		bottom: -110%;
 	}
-	#showcase:hover #button {
+	#showcase:hover #button,
+	#showcase.scrolled #button {
 		bottom: -80%;
 	}
 	#button:hover {
@@ -578,13 +580,13 @@ a {
 	}
 	.nav-item a:hover {
 		background:#f7f7f7;
-	}	
+	}
 	.nav-active {
 		display:block;
 		margin-top: 20px;
 	}
 	.nav-mobile-open {
-		
+
 	}
 	#showcase {
 		width: 100%;
@@ -638,14 +640,14 @@ a {
 	.title {
 		font-size: 20px;
 	}
-	.col { 
+	.col {
 		margin: 1% 0 5% 0%;
 		padding-left: 2%;
 		display: block;
 		float:left;
 	}
 	.span_2_of_2 {
-		width: 48%; 
+		width: 48%;
 	}
 	.span_1_of_2 {
 		width: 48%;
@@ -719,13 +721,13 @@ a {
 	}
 	.nav-item a:hover {
 		background:#f7f7f7;
-	}	
+	}
 	.nav-active {
 		display:block;
 		margin-top: 20px;
 	}
 	.nav-mobile-open {
-		
+
 	}
 	#showcasewrap {
 		width:70%;
@@ -814,7 +816,7 @@ a {
 	}
 
 }
-	
+
 @media only screen and (min-width: 100px) and (max-width: 400px) {
 	#header {
 		margin-right: auto;
@@ -850,13 +852,13 @@ a {
 	}
 	.nav-item a:hover {
 		background:#f7f7f7;
-	}	
+	}
 	.nav-active {
 		display:block;
 		margin-top: 20px;
 	}
 	.nav-mobile-open {
-		
+
 	}
 	#showcasewrap {
 		width:70%;

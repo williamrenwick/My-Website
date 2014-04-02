@@ -29,15 +29,15 @@
 				</ul>
 			</nav>
 
-			
-		</div>	
+
+		</div>
 
 		<div id="showcase">
 			<div id="button">
 				<a href="pages/about.html">About Me</a>
 			</div>
 		</div>
-		
+
 		<div class="projects container">
 			<div class="titlewrap">
 				<div id="workTitle">
@@ -152,7 +152,7 @@
 						</ul>
 					</div>
 					<div class="copyright">
-						<p>© 2014 All work copyright of William Renwick.</p> 
+						<p>© 2014 All work copyright of William Renwick.</p>
 					</div>
 				</div>
 			</div>
@@ -162,32 +162,24 @@
 
 		<script>
 		$(function() {
-		var resizeShowcaseDiv = function() {
-			$("#showcase").height($(window).height());
-		};
+			var resizeShowcaseDiv = function() {
+				$("#showcase").height($(window).height());
+			};
 
-		resizeShowcaseDiv();
-		$(window).on("resize", resizeShowcaseDiv);
+			resizeShowcaseDiv();
+			$(window).on("resize", resizeShowcaseDiv);
 		});
 
 		$("#button").click(function(){
-     		window.location=$(this).find("a").attr("href"); 
+     		window.location=$(this).find("a").attr("href");
      		return false;
 		});
 
 		$(function() {
 			$(document).scroll(function(){
-		    $('#showcase').toggleClass('scrolled', $(this).scrollTop() > 20, 200);
-		 });
+		    	$('#showcase').toggleClass('scrolled', $(this).scrollTop() > 20, 200);
+		 	});
 		});
-
-		var $window = $(window); var velocity = 0.4; 
-			function update(){ 
-				var pos = $window.scrollTop(); 
-				$('.container').each(function() { 
-					var $element = $(this); 
-					var height = $element.height(); 
-					$(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
 
 		$(document).scroll(function(){
 		     $('#header').toggleClass('scrolled', $(this).scrollTop() > 105);
@@ -197,16 +189,16 @@
 			return $("#header").outerHeight();
 		}
 
-		$('#about').click(function(){ 
+		$('#about').click(function(){
 			$('body').scrollTo('#me', 600, { offset: -(getHeaderHeight() - 1) });
 		});
 
-		$('#work').click(function(){ 
+		$('#work').click(function(){
 			$('body').scrollTo('#workTitle', 600, { offset: -getHeaderHeight() });
 		});
 
 		(function () {
-        
+
 		    // Create mobile element
 		    var mobile = document.createElement('div');
 		    mobile.className = 'nav-mobile';
@@ -233,15 +225,16 @@
 		    // Mobile nav function
 		    var mobileNav = document.querySelector('.nav-mobile');
 		    var toggle = document.querySelector('.nav-list');
+
 		    mobileNav.onclick = function () {
 		        toggleClass(this, 'nav-mobile-open');
 		        toggleClass(toggle, 'nav-active');
 		    };
 		})();
 
-  		
+
 		</script>
 
-		 
+
 	</body>
 </html>
