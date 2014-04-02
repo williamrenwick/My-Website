@@ -320,30 +320,22 @@ a {
     	transition-duration: 0.1s;
 	}
 	.showcase {
-		display: table;
 		width: 100%;
+		margin-top: 20px;
 		background-color: #f7f7f7;
 		overflow: hidden;
+		background-image: url(../img/Name.svg);
+		background-position: center;
+		background-repeat: no-repeat;
 	}
-	#showcasewrap {
-		display: table-cell;
-		vertical-align: middle;
-		margin: 0 auto;
-	}
-	.showcase img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
-	.showcase:hover{
+	.showcase:hover {
+		background-image: url(../img/Namehov.svg);
 		background-color: #5a2bf1;
-	}
-	.showcase:hover #button {
-		bottom: 40px;
+		background-repeat: repeat;
 	}
 	#button {
 		border:2px solid #fff;
+		background-color: #5a2bf1;
 		padding:10px 20px;
 		width: 100px;
 		border-radius: 3px;
@@ -365,7 +357,10 @@ a {
 		text-decoration: none;
 		text-transform: uppercase;
 		position: relative;
-		bottom: -90px;
+		bottom: -110%;
+	}
+	.showcase:hover #button {
+		bottom: -80%;
 	}
 	#button:hover {
 		background-color: #fff;
@@ -446,29 +441,25 @@ a {
     	-moz-transition-duration: 0.1s;
     	transition-duration: 0.1s;
 	}
-	#showcasewrap {
-		width:70%;
-		margin: 0 auto;
-	}
-	.showcase img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
 	.showcase {
 		width: 100%;
+		margin-top: 20px;
 		background-color: #f7f7f7;
 		overflow: hidden;
+		background-size: 80%;
+		background-image: url(../img/Name.svg);
+		background-position: center;
+		background-repeat: no-repeat;
 	}
-	.showcase:hover{
+	.showcase:hover {
+		background-image: url(../img/Namehov.svg);
 		background-color: #5a2bf1;
-	}
-	.showcase:hover #button {
-		bottom: 35px;
+		background-repeat: repeat;
+		background-size: 40%;
 	}
 	#button {
 		border:2px solid #fff;
+		background-color: #5a2bf1;
 		padding:10px 20px;
 		width: 100px;
 		border-radius: 3px;
@@ -477,7 +468,7 @@ a {
 		-webkit-transition-duration: 0.2s;
     	-moz-transition-duration: 0.2s;
     	transition-duration: 0.2s;
-    	-webkit-user-select:none;
+    	 -webkit-user-select:none;
     	-moz-user-select:none;
     	-ms-user-select:none;
     	user-select:none;
@@ -490,8 +481,10 @@ a {
 		text-decoration: none;
 		text-transform: uppercase;
 		position: relative;
-		bottom: -40px;
-
+		bottom: -110%;
+	}
+	.showcase:hover #button {
+		bottom: -80%;
 	}
 	#button:hover {
 		background-color: #fff;
@@ -593,26 +586,24 @@ a {
 	.nav-mobile-open {
 		
 	}
-	#showcasewrap {
-		width:70%;
-		margin: 0 auto;
-	}
-	.showcase img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
-	.showcase {
+		.showcase {
 		width: 100%;
+		margin-top: 20px;
 		background-color: #f7f7f7;
 		overflow: hidden;
+		background-size: 80%;
+		background-image: url(../img/Name.svg);
+		background-position: center;
+		background-repeat: no-repeat;
 	}
-	.showcase:hover{
+	.showcase:hover {
+		background-image: url(../img/Namehov.svg);
 		background-color: #5a2bf1;
+		background-repeat: repeat;
+		background-size: 40%;
 	}
 	.showcase:hover #button {
-		bottom: 20px;
+		bottom: -80%;
 	}
 	#button {
 		background-image: url(../img/more.svg);
@@ -626,7 +617,7 @@ a {
   		white-space:nowrap;
     	cursor: pointer;
 		position: relative;
-		bottom: -40px;
+		bottom: -110%;
 		-webkit-transition-duration: 0.2s;
     	-moz-transition-duration: 0.2s;
     	transition-duration: 0.2s;
