@@ -32,7 +32,7 @@
 			
 		</div>	
 
-		<div class="showcase">
+		<div id="showcase">
 			<div id="button">
 				<a href="pages/about.html">About Me</a>
 			</div>
@@ -163,7 +163,7 @@
 		<script>
 		$(function() {
 		var resizeShowcaseDiv = function() {
-			$(".showcase").height($(window).height());
+			$("#showcase").height($(window).height());
 		};
 
 		resizeShowcaseDiv();
@@ -176,11 +176,9 @@
 		});
 
 		$(function() {
-			$(".showcase").mouseover(function() {
-	        $(this).animate({ backgroundColor:'#5a2bf1'},200);
-	    		}).mouseout(function() {
-	        $(this).animate({ backgroundColor:'#f7f7f7'},200);
-   			}); 
+			$(document).scroll(function(){
+		    $('#showcase').toggleClass('scrolled', $(this).scrollTop() > 20, 200);
+		 });
 		});
 
 		var $window = $(window); var velocity = 0.4; 
